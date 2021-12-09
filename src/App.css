@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+  background-image: linear-gradient(rgb(86, 7, 150), rgb(107, 6, 107));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  margin: 0 auto;
+  background-color: rgb(218, 149, 236);
+}
+td {
+  width: 150px;
+  height: 150px;
+  border-right: 5px solid rgb(202, 13, 240);
+  border-bottom: 5px solid rgb(202, 13, 240);
+  
+}
+tr:last-child > td {
+  border-bottom: none;
+}
+
+td:last-child {
+  border-right: none;
+}
+.fade-in {
+  font-size: 40px;
+  font-weight: bolder;
+  animation: fadeIn ease-in-out 0.4s;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0%;
+  }
+  50% {
+    font-size: 120px;
+  }
+  100% {
+    font-size:100%;
+  }
+  
+}
+
+
+button {
+  background-color: aliceblue;
+  color:blueviolet;
+  border:none;
+  outline:none;
+  padding:10px 20px;
+  font-size:20px;
+  margin-top:30px;
+  margin-bottom:10px;
+  cursor:pointer;
+}
+
+.game-over {
+  animation: fade-game ease-in-out 0.4s;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: white;
+  color: blueviolet;
+}
+
+@keyframes .fade-game {
+  0%{
+    opacity:0%;
+  }
+  50%{
+    font-size:large;
+  }
+  100%{
+    opacity: 100%;
+
+  }
+}

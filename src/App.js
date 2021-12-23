@@ -60,7 +60,7 @@ function App() {
     const uniqueRight = Array.from(new Set(diaRight));
 
     if(
-      (uniqueLeft.lenght === 1 && uniqueLeft[0]) || 
+      (uniqueLeft.length === 1 && uniqueLeft[0]) || 
     (uniqueRight.length ===1 && uniqueRight[0])
     ){
       return true;
@@ -95,7 +95,7 @@ function App() {
      <div className="inner-container">
      
      <h1>Tic Tac Toe! Created by Prince</h1>
-     <p>{currentplayer} Its your turn!</p>
+     <p>{!gameOver && `${currentplayer} it's your turn!`}</p>
      {gameOver && (
        <h2 className="game-over">
          Game Over!{' '} {draw ? "Its a draw" : `${currentplayer} is the Winner!`}
